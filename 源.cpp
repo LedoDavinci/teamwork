@@ -1,11 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 0
+
+//检测数据库死锁的方法
+
 typedef struct GRAPHMATRIX_STRU
 {
     int size;
     int **graph;
-}GraphMatrix;
+}
+
+
+GraphMatrix;
+
+//功能函数
 
 GraphMatrix* InitGraph(int num)
 {
@@ -14,7 +22,9 @@ GraphMatrix* InitGraph(int num)
     graphMatrix->size=num;
     graphMatrix->graph=(int**)malloc(sizeof(int*)*graphMatrix->size);
     for(i=0;i<graphMatrix->size;i++)
+    {
         graphMatrix->graph[i]=(int*)malloc(sizeof(int)*graphMatrix->size);
+    }
     for(i=0;i<graphMatrix->size;i++)
     {
         for(j=0;j<graphMatrix->size;j++)
@@ -23,6 +33,9 @@ GraphMatrix* InitGraph(int num)
     }
     return graphMatrix;
 }
+
+//输入函数
+
 void ReadMatrix(GraphMatrix*graphMatrix)
 {
     int vex1,vex2;
@@ -32,8 +45,10 @@ void ReadMatrix(GraphMatrix*graphMatrix)
         graphMatrix->graph[vex1][vex2]=1;
         scanf("%d%d",&vex1,&vex2);
     }
-
 }
+
+//判断函数
+
 void loop(GraphMatrix *graphMatrix,int *visited,int source,int s,int *count)
 {
     int j;
@@ -41,8 +56,8 @@ void loop(GraphMatrix *graphMatrix,int *visited,int source,int s,int *count)
     for(j=0;j<graphMatrix->size;j++)
     {
         if(graphMatrix->graph[source][j]!=MAX&&j==s)
-        {   count[0]++;
-            
+        {   
+		count[0]++;  
         }
 
         if(graphMatrix->graph[source][j]!=MAX&&!visited[j])
@@ -51,13 +66,14 @@ void loop(GraphMatrix *graphMatrix,int *visited,int source,int s,int *count)
 }
 
 
+//主函数
 
 int main()
 {
     int num;
     int i=0,j;
     int count[1]={0};
-	printf("�������������");
+	printf("请输入结点个数：");
 	scanf("%d",&num);
     int *visited=(int*)malloc(sizeof(int)*num);
    GraphMatrix *graphMatrix;
@@ -75,9 +91,13 @@ int main()
 
    }
    if(count[0]==0)
-	   printf("ͼ�в����ڻ�·\n");
+   {
+	   printf("图中不存在回路\n");
+   }
    else
-	   printf("ͼ�д��ڻ�·\n");
+   {
+	   printf("图中存在回路\n");
+   }
    system("pause");
    return 0;
 }
