@@ -1,0 +1,26 @@
+﻿生成启动时间为 2022/4/23 17:35:31。
+     1>项目“C:\Users\Jackie Tian\Desktop\shujvjiegoukeshe\shujvjiegoukeshe\shujvjiegoukeshe\shujvjiegoukeshe.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\shujvjiegoukeshe.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         D:\vs2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "源.cpp"
+         源.cpp
+     1>c:\users\jackie tian\desktop\shujvjiegoukeshe\shujvjiegoukeshe\shujvjiegoukeshe\源.cpp(29): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>c:\users\jackie tian\desktop\shujvjiegoukeshe\shujvjiegoukeshe\shujvjiegoukeshe\源.cpp(33): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>c:\users\jackie tian\desktop\shujvjiegoukeshe\shujvjiegoukeshe\shujvjiegoukeshe\源.cpp(61): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(304) : 参见“scanf”的声明
+       Link:
+         D:\vs2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jackie Tian\Desktop\shujvjiegoukeshe\shujvjiegoukeshe\Debug\shujvjiegoukeshe.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\shujvjiegoukeshe.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Jackie Tian\Desktop\shujvjiegoukeshe\shujvjiegoukeshe\Debug\shujvjiegoukeshe.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jackie Tian\Desktop\shujvjiegoukeshe\shujvjiegoukeshe\Debug\shujvjiegoukeshe.lib" /MACHINE:X86 "Debug\源.obj"
+         shujvjiegoukeshe.vcxproj -> C:\Users\Jackie Tian\Desktop\shujvjiegoukeshe\shujvjiegoukeshe\Debug\shujvjiegoukeshe.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Jackie Tian\Desktop\shujvjiegoukeshe\shujvjiegoukeshe\Debug\shujvjiegoukeshe.exe;#1" /manifest Debug\shujvjiegoukeshe.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\shujvjiegoukeshe.unsuccessfulbuild”。
+         正在对“Debug\shujvjiegoukeshe.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\Jackie Tian\Desktop\shujvjiegoukeshe\shujvjiegoukeshe\shujvjiegoukeshe\shujvjiegoukeshe.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:11.50
